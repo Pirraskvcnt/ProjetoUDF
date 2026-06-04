@@ -3,7 +3,6 @@
 # ==============================================================================
 
 def cadastrar_dados():
-    """Solicita os dados do usuário e retorna-os organizados."""
     materia = input("Digite a matéria: ")
     n1 = float(input("Digite a primeira nota: "))
     n2 = float(input("Digite a segunda nota: "))
@@ -13,17 +12,14 @@ def cadastrar_dados():
 
 
 def calcular_nota(n1, n2, n3):
-    """Calcula e retorna a média das três notas."""
     return (n1 + n2 + n3) / 3
 
 
 def verificar_frequencia(freq):
-    """Retorna True se a frequência for suficiente (>= 75%) ou False caso contrário."""
     return freq >= 75
 
 
 def gerar_relatorio(historico):
-    """Processa a lista de matérias cadastradas e exibe as estatísticas finais."""
     print('\n=========================================')
     print('      RELATÓRIO FINAL DO SEMESTRE        ')
     print('=========================================')
