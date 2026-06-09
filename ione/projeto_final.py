@@ -34,7 +34,7 @@ def gerar_relatorio(historico_materias):
             aprovados += 1
         print(f"-> {m['nome']}: Média {m['media']:.1f} | Frequência: {m['frequencia']}% | Status: {m['status']}")
 
-    media_geral = soma_medias / total_materias if total_materias > 0 else 0
+    media_geral = soma_medias / total_materias 
     reprovados = total_materias - aprovados
 
     print('-----------------------------------------')
