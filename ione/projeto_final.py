@@ -19,16 +19,16 @@ def verificar_frequencia(freq):
     return freq >= 75
 
 
-def gerar_relatorio(historico):
+def gerar_relatorio(historico_materias):
     print('\n=========================================')
     print('      RELATÓRIO FINAL DO SEMESTRE        ')
     print('=========================================')
     
-    total_materias = len(historico)
+    total_materias = len(historico_materias)
     aprovados = 0
     soma_medias = 0
 
-    for m in historico:
+    for m in historico_materias:
         soma_medias += m['media']
         if m['status'] == 'Aprovado':
             aprovados += 1
